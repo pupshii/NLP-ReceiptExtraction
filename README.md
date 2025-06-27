@@ -1,6 +1,7 @@
-<h1 align="center">Data Augmentation For Receipt Extraction using Natural Language Processing</h1>
+<h1 align="center">CNN-LSTM-Based Bilingual Receipt Information Extraction Using Template-Based Data Generation</h1>
 
 <div align='center'>
+    <a href='https://ieeexplore.ieee.org/document/10770740' target='_blank'><strong>IEEExplore Link</strong></a><sup></sup>&emsp;
     <a href='https://github.com/pupshii' target='_blank'><strong>Poonyavee Wongwisetsuk</strong></a><sup></sup>&emsp;
     <a href='https://github.com/PhoramintTaweeros' target='_blank'><strong>Phoramint Chotwarutkit</strong></a><sup></sup>&emsp;
 </div>
