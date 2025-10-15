@@ -10,8 +10,53 @@
     King Mongkut's University of Technology Thonburi
 </div>
 
-## Introduction
-This is a code repository containing Pytorch implementation of the paper Data Augmentation For Receipt Extraction using Natural Language Processing. 
+## 🧾 Introduction
+
+This project implements a **CNN-LSTM image captioning system** designed for **bilingual (Thai–English)** receipt information extraction.  
+It automatically generates structured text (captions) describing key information (e.g., store name, items, price, total) directly from receipt images.
+
+The approach combines **Convolutional Neural Networks (CNN)** for visual feature extraction and **Long Short-Term Memory (LSTM)** networks for text sequence generation.  
+A **template-based data generation** pipeline is used to create synthetic bilingual training data to overcome limited real-world datasets.
+
+---
+
+## 🧠 Overview
+
+The system aims to bridge the gap between OCR-based document reading and multimodal understanding by teaching a neural model to “describe” receipts in natural language.
+
+**Core ideas:**
+- Learn to extract key entities (items, totals, store names) visually.
+- Support bilingual text (Thai + English).
+- Use synthetic data generated from templates to improve generalization.
+
+---
+
+## 📁 Repository Structure
+
+| File | Description |
+|------|--------------|
+| **train2.py** | Main training and evaluation script. Builds dataset, model, optimizer, and loss; runs training loop and test function. |
+| **model2.py** | Defines the deep learning architecture: `EncoderCNNResnet50`, `DecoderRNN`, and `CNNtoRNN` wrapper. |
+| **dataloader2.py** | Handles data loading, image transformations, tokenization, and batching. |
+| **readfile_torch.py** | Reads receipt text from template or OCR files and formats caption pairs. |
+| **Final Report-2.pdf** | Research report explaining the methodology, experiments, and evaluation results. |
+| *(optional)* **utils.py**, **preprocessing_torch.py** | Helper modules for checkpointing, logging, or preprocessing (may need to be added). |
+
+---
+
+## 🧩 Requirements
+
+Python ≥ 3.9  
+PyTorch ≥ 2.0  
+TorchVision ≥ 0.15  
+Transformers ≥ 4.30  
+Pillow ≥ 9.0  
+NumPy, Pandas, Matplotlib  
+
+Install dependencies:
+```bash
+pip install torch torchvision transformers pillow numpy pandas matplotlib
+```
 
 ## Getting Started
 ### 1. Clone the code
