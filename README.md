@@ -55,7 +55,7 @@ NumPy, Pandas, Matplotlib
 
 Install dependencies:
 ```bash
-pip install torch torchvision transformers pillow numpy pandas matplotlib
+pip install torch torchvision transformers pillow numpy pandas matplotlib spacy opencv
 ```
 
 ## Getting Started
